@@ -1,0 +1,6 @@
+// This exercise was done on the Pavlov Vyacheslav's laptop.
+
+всего занято свободно общая буф./врем. доступно
+Память: 15G 1,7G 12G 437M 1,7G 13G
+Подкачка: 15G 0B 15G
+Всего: 31G 1,7G 27G

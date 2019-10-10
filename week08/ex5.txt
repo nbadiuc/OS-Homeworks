@@ -1,0 +1,1 @@
+The difference between a physical and virtual address is that physical addresses refer to hardware addresses of physical memory, and virtual addresses refer to the virtual store viewed by the process.
