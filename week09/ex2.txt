@@ -1,0 +1,20 @@
+Example of sequence of references that results in increased Hit/Miss ratio:
+1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7
+
+On this input I got output: 
+84
+7
+12.000000
+
+Because of repeating only 7 pages with 8-bit counter, neither of them is removed at any time. We got 7 misses because at the beginning none of these pages is stored.
+
+
+Example of sequence of references that results in decreased Hit/Miss ratio:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+
+On this input I got output:
+0
+20
+0.000000
+
+We got no hits in such input because each of pages is unique.
