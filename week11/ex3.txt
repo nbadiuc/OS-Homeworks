@@ -1,0 +1,14 @@
+Using fork() in our program leads to the fact that parent and child processes have the same buffers.
+
+Program 1:
+Before fork(), we have "Hello" in buffer. Then, after printf("\n"), \n is added to the buffer for each process. That is why in output we have:
+Hello
+Hello
+
+
+Program 2:
+Before fork(), we have "Hello\n" in buffer. Then, after printf("\n"), \n is added to the buffer for each process. That is why in output we have:
+Hello
+
+Hello
+
